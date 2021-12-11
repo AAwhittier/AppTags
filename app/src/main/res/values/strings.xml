@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SettingsFinal</string>
+    <string name="package_name">Enter a package name...</string>
+    <string name="write_to_tag">Write to Tag</string>
+    <string name="background">background</string>
+    <string name="submit">Submit</string>
+    <string name="enter_a_package_name">Enter a package name...</string>
+</resources>

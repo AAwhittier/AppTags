@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".URLInput">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nfc_background" />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="584dp"
+        android:padding="12dp"
+        android:shadowColor="#F5A623"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="16"
+        android:text="Enter a URL"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/URL_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#CCFFFFFF"
+        android:hint="Enter a URL..."
+        android:inputType="textUri"
+        android:padding="15dp"
+        android:textColorHint="#000"
+        android:textStyle="normal"
+        android:singleLine="false"
+        android:maxLength="504"/>
+    <!-- NTAG 215 capacity is 540 with 504 bytes available to write.
+        1 UTF 8 character is 1 byte. -->
+
+    <Button
+        android:id="@+id/submit_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#000"
+        android:padding="10dp"
+        android:text="Submit"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
